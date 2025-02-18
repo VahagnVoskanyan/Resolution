@@ -1,0 +1,534 @@
+[
+    {
+        "name": "prove_2_less_3",
+        "formula": "$less(2,3)"
+    },
+    {
+        "name": "prove_3_not_less_2",
+        "formula": "~$less(3,2)"
+    },
+    {
+        "name": "prove_2_less_13",
+        "formula": "$less(2,13)"
+    },
+    {
+        "name": "something_less_13",
+        "formula": "?[X:$int]:$less(X,13)"
+    },
+    {
+        "name": "prove_12_less_something",
+        "formula": "?[X:$int]:$less(12,X)"
+    },
+    {
+        "name": "something_less_something",
+        "formula": "?[X:$int,Y:$int]:$less(X,Y)"
+    },
+    {
+        "name": "n2_less_2",
+        "formula": "$less(-2,2)"
+    },
+    {
+        "name": "n4_less_n2",
+        "formula": "$less(-4,-2)"
+    },
+    {
+        "name": "prove_2_not_less_n2",
+        "formula": "~$less(2,-2)"
+    },
+    {
+        "name": "n2_not_less_n4",
+        "formula": "~$less(-2,-4)"
+    },
+    {
+        "name": "something_less_0",
+        "formula": "?[X:$int]:$less(X,0)"
+    },
+    {
+        "name": "something_less_n2",
+        "formula": "?[X:$int]:$less(X,-2)"
+    },
+    {
+        "name": "n2_less_something",
+        "formula": "?[X:$int]:$less(-2,X)"
+    },
+    {
+        "name": "prove_2_lesseq_2",
+        "formula": "$lesseq(2,2)"
+    },
+    {
+        "name": "prove_2_lesseq_3",
+        "formula": "$lesseq(2,3)"
+    },
+    {
+        "name": "prove_3_not_lesseq_2",
+        "formula": "~$lesseq(3,2)"
+    },
+    {
+        "name": "something_lesseq_13",
+        "formula": "?[X:$int]:$lesseq(X,13)"
+    },
+    {
+        "name": "prove_12_lesseq_something",
+        "formula": "?[X:$int]:$lesseq(12,X)"
+    },
+    {
+        "name": "something_lesseq_something",
+        "formula": "?[X:$int,Y:$int]:$lesseq(X,Y)"
+    },
+    {
+        "name": "n2_lesseq_n2",
+        "formula": "$lesseq(-2,-2)"
+    },
+    {
+        "name": "n2_lesseq_2",
+        "formula": "$lesseq(-2,2)"
+    },
+    {
+        "name": "n4_lesseq_n2",
+        "formula": "$lesseq(-4,-2)"
+    },
+    {
+        "name": "prove_2_not_lesseq_n2",
+        "formula": "~$lesseq(2,-2)"
+    },
+    {
+        "name": "n2_not_lesseq_n4",
+        "formula": "~$lesseq(-2,-4)"
+    },
+    {
+        "name": "something_lesseq_0",
+        "formula": "?[X:$int]:$lesseq(X,0)"
+    },
+    {
+        "name": "something_lesseq_n2",
+        "formula": "?[X:$int]:$lesseq(X,-2)"
+    },
+    {
+        "name": "n2_lesseq_something",
+        "formula": "?[X:$int]:$lesseq(-2,X)"
+    },
+    {
+        "name": "prove_4_greater_3",
+        "formula": "$greater(4,3)"
+    },
+    {
+        "name": "prove_3_not_greater_4",
+        "formula": "~$greater(3,4)"
+    },
+    {
+        "name": "prove_17_greater_8",
+        "formula": "$greater(17,8)"
+    },
+    {
+        "name": "something_greater_15",
+        "formula": "?[X:$int]:$greater(X,15)"
+    },
+    {
+        "name": "prove_15_greater_something",
+        "formula": "?[X:$int]:$greater(15,X)"
+    },
+    {
+        "name": "something_greater_something",
+        "formula": "?[X:$int,Y:$int]:$greater(X,Y)"
+    },
+    {
+        "name": "prove_4_greater_n4",
+        "formula": "$greater(4,-4)"
+    },
+    {
+        "name": "n4_greater_n6",
+        "formula": "$greater(-4,-6)"
+    },
+    {
+        "name": "prove_n3_not_greater_3",
+        "formula": "~$greater(-3,3)"
+    },
+    {
+        "name": "n5_not_greater_n3",
+        "formula": "~$greater(-5,-3)"
+    },
+    {
+        "name": "something_greater_0",
+        "formula": "?[X:$int]:$greater(X,0)"
+    },
+    {
+        "name": "something_greater_n5",
+        "formula": "?[X:$int]:$greater(X,-5)"
+    },
+    {
+        "name": "n5_greater_something",
+        "formula": "?[X:$int]:$greater(-5,X)"
+    },
+    {
+        "name": "prove_2_greatereq_2",
+        "formula": "$greatereq(2,2)"
+    },
+    {
+        "name": "prove_4_greatereq_3",
+        "formula": "$greatereq(4,3)"
+    },
+    {
+        "name": "prove_6_not_greatereq_7",
+        "formula": "~$greatereq(6,7)"
+    },
+    {
+        "name": "something_greatereq_15",
+        "formula": "?[X:$int]:$greatereq(X,15)"
+    },
+    {
+        "name": "prove_15_greatereq_something",
+        "formula": "?[X:$int]:$greatereq(15,X)"
+    },
+    {
+        "name": "something_greatereq_something",
+        "formula": "?[X:$int,Y:$int]:$greatereq(X,Y)"
+    },
+    {
+        "name": "n4_greatereq_n4",
+        "formula": "$greatereq(-4,-4)"
+    },
+    {
+        "name": "prove_4_greatereq_n6",
+        "formula": "$greatereq(4,-6)"
+    },
+    {
+        "name": "n3_greatereq_n6",
+        "formula": "$greatereq(-3,-6)"
+    },
+    {
+        "name": "prove_n3_not_greatereq_3",
+        "formula": "~$greatereq(-3,3)"
+    },
+    {
+        "name": "n5_not_greatereq_n3",
+        "formula": "~$greatereq(-5,-3)"
+    },
+    {
+        "name": "something_greatereq_0",
+        "formula": "?[X:$int]:$greatereq(X,0)"
+    },
+    {
+        "name": "something_greatereq_n5",
+        "formula": "?[X:$int]:$greatereq(X,-5)"
+    },
+    {
+        "name": "n5_greatereq_something",
+        "formula": "?[X:$int]:$greatereq(-5,X)"
+    },
+    {
+        "name": "prove_31_not_12",
+        "formula": "31!=12"
+    },
+    {
+        "name": "something_not_12",
+        "formula": "?[X:$int]:(X!=12)"
+    },
+    {
+        "name": "sum_2_3_5",
+        "formula": "$sum(2,3)=5"
+    },
+    {
+        "name": "sum_23_34_57",
+        "formula": "$sum(23,34)=57"
+    },
+    {
+        "name": "sum_23_34_something",
+        "formula": "?[X:$int]:($sum(23,34)=X)"
+    },
+    {
+        "name": "sum_something_23_34",
+        "formula": "?[X:$int]:($sum(X,23)=34)"
+    },
+    {
+        "name": "sum_23_something_34",
+        "formula": "?[X:$int]:($sum(23,X)=34)"
+    },
+    {
+        "name": "sum_2_3_not_6",
+        "formula": "$sum(2,3)!=6"
+    },
+    {
+        "name": "sum_2_3_only_5",
+        "formula": "![X:$int]:(($sum(2,3)=X)=>(X=5))"
+    },
+    {
+        "name": "sum_only_2_3_5",
+        "formula": "![X:$int]:(($sum(X,3)=5)=>(X=2))"
+    },
+    {
+        "name": "sum2_only_3_5",
+        "formula": "![X:$int]:(($sum(2,X)=5)=>(X=3))"
+    },
+    {
+        "name": "sum_n2_n5_n7",
+        "formula": "$sum(-2,-5)=-7"
+    },
+    {
+        "name": "sum_2_n5_n3",
+        "formula": "$sum(2,-5)=-3"
+    },
+    {
+        "name": "sum_5_n2_3",
+        "formula": "$sum(5,-2)=3"
+    },
+    {
+        "name": "sum_5_n5_0",
+        "formula": "$sum(5,-5)=0"
+    },
+    {
+        "name": "sum_n2_n5_what",
+        "formula": "?[X:$int]:($sum(-2,-5)=X)"
+    },
+    {
+        "name": "sum_2_n5_what",
+        "formula": "?[Y:$int]:($sum(2,-5)=Y)"
+    },
+    {
+        "name": "sum_5_n2_what",
+        "formula": "?[X:$int]:($sum(5,-2)=X)"
+    },
+    {
+        "name": "sum_5_n5_what",
+        "formula": "?[X:$int]:($sum(5,-5)=X)"
+    },
+    {
+        "name": "sum_what_n5_n7",
+        "formula": "?[X:$int]:($sum(X,-5)=-7)"
+    },
+    {
+        "name": "sum_what_n5_n3",
+        "formula": "?[X:$int]:($sum(X,-5)=-3)"
+    },
+    {
+        "name": "sum_what_n2_3",
+        "formula": "?[X:$int]:($sum(X,-2)=3)"
+    },
+    {
+        "name": "sum_what_n5_0",
+        "formula": "?[X:$int]:($sum(X,-5)=0)"
+    },
+    {
+        "name": "sum_zero_identity",
+        "formula": "?[X:$int]:($sum(X,0)=X)"
+    },
+    {
+        "name": "sum_something_anotherthing_firstthing",
+        "formula": "?[X:$int,Y:$int]:($sum(X,Y)=X)"
+    },
+    {
+        "name": "sum_4_4_8",
+        "formula": "?[X:$int,Y:$int]:(($sum(X,Y)=8)&(X=4)&(Y=4))"
+    },
+    {
+        "name": "communative_sum_6_7",
+        "formula": "![Z1:$int,Z2:$int]:((($sum(6,7)=Z1)&($sum(7,6)=Z2))=>(Z1=Z2))"
+    },
+    {
+        "name": "associative_sum",
+        "formula": "![Z1:$int,Z2:$int,Z3:$int,Z4:$int]:((($sum(2,3)=Z1)&($sum(Z1,6)=Z2)&($sum(3,6)=Z3)&($sum(2,Z3)=Z4))=>(Z2=Z4))"
+    },
+    {
+        "name": "associative_sum_exists",
+        "formula": "?[X:$int,Y:$int,Z:$int,Z1:$int,Z2:$int,Z3:$int,Z4:$int]:((($sum(X,Y)=Z1)&($sum(Z1,Z)=Z2)&($sum(Y,Z)=Z3)&($sum(X,Z3)=Z4))=>(Z2=Z4))"
+    },
+    {
+        "name": "p_type,type,\n    p: $int > $o ).\n\ntff(sum_2_3_5_predicate",
+        "formula": "(p($sum(2,3))=>p(5))"
+    },
+    {
+        "name": "p_type,type,\n    p: ( $int * $int ) > $o ).\n\ntff(sum_X_Y_7_predicate",
+        "formula": "((p(3,4)&~p(1,6))=>?[X:$int,Y:$int]:(p(X,Y)&($sum(X,Y)=7)))"
+    },
+    {
+        "name": "anti_sum_2_2_5",
+        "formula": "$sum(2,2)=5"
+    },
+    {
+        "name": "anti_sum_what_what_0",
+        "formula": "?[X:$int]:((X!=0)&($sum(X,X)=0))"
+    },
+    {
+        "name": "anti_sum_only_4_only_4_8",
+        "formula": "![X:$int,Y:$int]:(($sum(X,Y)=8)=>((X=4)&(Y=4)))"
+    },
+    {
+        "name": "diff_7_5_2",
+        "formula": "$difference(7,5)=2"
+    },
+    {
+        "name": "diff_5_3_only_2",
+        "formula": "![X:$int]:(($difference(5,3)=X)=>(X=2))"
+    },
+    {
+        "name": "diff_only_5_2_3",
+        "formula": "![X:$int]:(($difference(X,2)=3)=>(X=5))"
+    },
+    {
+        "name": "diff_5_only_3_2",
+        "formula": "![X:$int]:(($difference(5,X)=2)=>(X=3))"
+    },
+    {
+        "name": "diff_zero_identity",
+        "formula": "?[X:$int]:($difference(X,0)=X)"
+    },
+    {
+        "name": "p_type,type,\n    p: $int > $o ).\n\ntff(diff_5_3_2_predicate",
+        "formula": "(p($difference(5,3))=>p(2))"
+    },
+    {
+        "name": "lower_boundary",
+        "formula": "?[X:$int]:($difference(-128,1)=X)"
+    },
+    {
+        "name": "product_2_3_6",
+        "formula": "$product(2,3)=6"
+    },
+    {
+        "name": "product_n2_3_n6",
+        "formula": "$product(-2,3)=-6"
+    },
+    {
+        "name": "product_n2_n3_6",
+        "formula": "$product(-2,-3)=6"
+    },
+    {
+        "name": "product_11_11_121",
+        "formula": "$product(11,11)=121"
+    },
+    {
+        "name": "product_11_11_something",
+        "formula": "?[X:$int]:($product(11,11)=X)"
+    },
+    {
+        "name": "product_something_11_121",
+        "formula": "?[X:$int]:($product(X,11)=121)"
+    },
+    {
+        "name": "product_11_something_121",
+        "formula": "?[X:$int]:($product(11,X)=121)"
+    },
+    {
+        "name": "product_2_3_not_5",
+        "formula": "$product(2,3)!=5"
+    },
+    {
+        "name": "product_2_3_only_6",
+        "formula": "![X:$int]:(($product(2,3)=X)=>(X=6))"
+    },
+    {
+        "name": "product_only_2_3_6",
+        "formula": "![X:$int]:(($product(X,3)=6)=>(X=2))"
+    },
+    {
+        "name": "product_2_only_3_6",
+        "formula": "![X:$int]:(($product(2,X)=6)=>(X=3))"
+    },
+    {
+        "name": "product_n2_n5_10",
+        "formula": "$product(-2,-5)=10"
+    },
+    {
+        "name": "product_2_n5_n10",
+        "formula": "$product(2,-5)=-10"
+    },
+    {
+        "name": "product_5_n2_n10",
+        "formula": "$product(5,-2)=-10"
+    },
+    {
+        "name": "product_5_0_0",
+        "formula": "$product(5,0)=0"
+    },
+    {
+        "name": "product_n2_n5_what",
+        "formula": "?[X:$int]:($product(-2,-5)=X)"
+    },
+    {
+        "name": "product_2_n5_what",
+        "formula": "?[Y:$int]:($product(2,-5)=Y)"
+    },
+    {
+        "name": "product_5_n2_what",
+        "formula": "?[X:$int]:($product(5,-2)=X)"
+    },
+    {
+        "name": "product_what_n5_n10",
+        "formula": "?[X:$int]:($product(X,-5)=-10)"
+    },
+    {
+        "name": "product_what_n5_10",
+        "formula": "?[X:$int]:($product(X,-5)=10)"
+    },
+    {
+        "name": "product_zero_identity",
+        "formula": "?[X:$int]:($product(X,0)=0)"
+    },
+    {
+        "name": "product_1_identity",
+        "formula": "?[X:$int]:($product(X,1)=X)"
+    },
+    {
+        "name": "product_something_anotherthing_firstthing",
+        "formula": "?[X:$int,Y:$int]:($product(X,Y)=X)"
+    },
+    {
+        "name": "product_4_4_16",
+        "formula": "?[X:$int,Y:$int]:(($product(X,Y)=16)&(X=4)&(Y=4))"
+    },
+    {
+        "name": "p_type,type,\n    p: $int > $o ).\n\ntff(product_X_X_4_predicate",
+        "formula": "(p(2)=>?[X:$int,Y:$int]:(p(X)&(X!=Y)&($product(Y,Y)=4)))"
+    },
+    {
+        "name": "commutative_product_6_7",
+        "formula": "![Z1:$int,Z2:$int]:((($product(6,7)=Z1)&($product(7,6)=Z2))=>(Z1=Z2))"
+    },
+    {
+        "name": "associative_product",
+        "formula": "![Z1:$int,Z2:$int,Z3:$int,Z4:$int]:((($product(2,3)=Z1)&($product(Z1,6)=Z2)&($product(3,6)=Z3)&($product(2,Z3)=Z4))=>(Z2=Z4))"
+    },
+    {
+        "name": "associative_product_exists",
+        "formula": "?[X:$int,Y:$int,Z:$int,Z1:$int,Z2:$int,Z3:$int,Z4:$int]:((($product(X,Y)=Z1)&($product(Z1,Z)=Z2)&($product(Y,Z)=Z3)&($product(X,Z3)=Z4))=>(Z2=Z4))"
+    },
+    {
+        "name": "p_type,type,\n    p: $int > $o ).\n\ntff(product_5_3_15_predicate",
+        "formula": "(p($product(5,3))=>p(15))"
+    },
+    {
+        "name": "anti_product_2_2_5",
+        "formula": "$product(2,2)=5"
+    },
+    {
+        "name": "anti_product_what_what_0",
+        "formula": "?[X:$int]:((X!=0)&($product(X,X)=0))"
+    },
+    {
+        "name": "anti_product_only_2_only_4_8",
+        "formula": "![X:$int,Y:$int]:(($product(X,Y)=8)=>((X=2)&(Y=4)))"
+    },
+    {
+        "name": "n2_equal_uminus_2",
+        "formula": "-2=$uminus(2)"
+    },
+    {
+        "name": "n2_equal_uminus_n2",
+        "formula": "2=$uminus(-2)"
+    },
+    {
+        "name": "sum_2_uminus_to_0",
+        "formula": "$sum(2,$uminus(2))=0"
+    },
+    {
+        "name": "sum_n2_uminus_to_0",
+        "formula": "$sum(-2,$uminus(-2))=0"
+    },
+    {
+        "name": "uminus_uminus_2",
+        "formula": "$uminus($uminus(2))=2"
+    },
+    {
+        "name": "uminus_uminus_n2",
+        "formula": "$uminus($uminus(-2))=-2"
+    }
+]

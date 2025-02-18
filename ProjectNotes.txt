@@ -1,3 +1,5 @@
 docker build -t vampire .
 
-docker run -it vampire ./vampire --mode casc -t 10 /vampire/examples/ARI001_1.p
+docker run -it vampire ./vampire --mode casc -t 10 /vampire/examples/Problems/CAT001-1.p
+
+.\venv\Scripts\activate   (Activates virtual environment)
