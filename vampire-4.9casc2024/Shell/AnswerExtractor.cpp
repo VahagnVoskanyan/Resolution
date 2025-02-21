@@ -197,12 +197,16 @@ public:
       auto qres = _unifIts[_depth].next();
       ASS_EQ(goalLit->header(), qres.data->literal->header());
       if(_subst.unifyArgs(goalLit, 0, qres.data->literal, 1)) {
+        // Log the substitution
+        std::cout << "----Found unifier: " << _subst << std::endl;
 	return true;
       }
     }
     if(!_triedEqUnif[_depth] && goalLit->isEquality() && goalLit->isPositive()) {
       _triedEqUnif[_depth] = true;
       if(_subst.unify(*goalLit->nthArgument(0), 0, *goalLit->nthArgument(1), 0)) {
+        // Log the substitution 
+        std::cout << "---Found equality unifier: " << _subst << std::endl;
 	return true;
       }
     }

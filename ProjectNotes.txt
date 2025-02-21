@@ -1,5 +1,23 @@
 docker build -t vampire .
 
-docker run -it vampire ./vampire --mode casc -t 10 /vampire/examples/Problems/CAT001-1.p
+// Can find here: Unification, Substitution(Подстановка), Superposition(Суперпозиция).
+docker run -it vampire ./vampire --proof_extra full -t 100 /vampire/examples/CAT001-1.p	
+
+// Clauses ?
+docker run -it --name vampire_clausify vampire ./vampire --mode clausify -t 100 /vampire/examples/CAT001-1.p
+
+// 
+docker run -it --name vampire_casc vampire ./vampire --mode casc -t 10 /vampire/examples/CAT001-1.p
+
+docker run -it vampire ./vampire --mode casc --proof on -t 100 /vampire/examples/CAT001-1.p
+
+
+
+docker run -it vampire ./vampire --mode program_analysis -t 100 /vampire/examples/CAT001-1.p
+
+
+
+
+docker run -it vampire ./vampire --show_options on
 
 .\venv\Scripts\activate   (Activates virtual environment)
