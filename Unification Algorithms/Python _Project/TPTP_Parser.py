@@ -49,3 +49,36 @@ def parse_term1(term_str):
         # Return a tuple representing the term
         return (functor, *arguments)
     return term_str  # Return as string if not a function
+
+##########################
+
+# Function to read CNF clauses from a file
+def read_clauses_from_file(filepath):
+    clauses = []
+    with open(filepath, "r") as file:
+        for line in file:
+            line = line.strip()
+            if line.startswith("cnf("):  # Ensuring it's a CNF clause
+                clauses.append(line)
+    return clauses
+
+def parse_term(term_str):
+    """Parses a term like 'f(A,B)' into a structured tuple ('f', ('A', 'B'))"""
+    match = re.match(r"([~]?\w+)\(([^)]*)\)", term_str)
+    if match:
+        predicate = match.group(1)  # Predicate name (possibly negated)
+        args = tuple(match.group(2).split(','))  # Extract arguments
+        return (predicate, args)
+    return term_str  # If it's a variable, return as-is
+
+def parse_clause(clause):
+    """Parses a CNF clause into a structured tuple."""
+    match = re.match(r"cnf\(([^,]+),\s*[^,]+,\s*\((.+)\)\)", clause)
+    if match:
+        clause_name = match.group(1)
+        literals = match.group(2).split(" | ")
+        structured_literals = [parse_term(lit.strip()) for lit in literals]
+        return clause_name, structured_literals
+    return None, None
+
+##########################

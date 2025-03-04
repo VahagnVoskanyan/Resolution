@@ -32,9 +32,9 @@ def process_all_files(directory):
     else:
         print("No data to save.")
 
-def main():
-    directory = "ARI_Problems"  # Path to the directory containing TPTP files
-    process_all_files(directory)
+# def main():
+#     directory = "ARI_Problems"  # Path to the directory containing TPTP files
+#     process_all_files(directory)
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
